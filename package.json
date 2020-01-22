@@ -1,0 +1,23 @@
+{
+  "name": "lyon_gyms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^13.1.8",
+    "algoliasearch": "^3.35.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/algoliasearch": "^3.34.9"
+  },
+  "scripts": {
+    "start": "parcel app/index.html --open",
+    "build": "parcel build app/index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
