@@ -19,25 +19,33 @@ interface Gym {
   _geoloc: GeoLoc;
 }
 
-const appID: string = process.env.ALGOLIA_APP_ID;
-const apiKey: string = process.env.ALGOLIA_SEARCH_API_KEY;
-const indexName: string = process.env.ALGOLIA_INDEX_NAME;
+const App = () => {
+  const appID: string = process.env.ALGOLIA_APP_ID!;
+  const apiKey: string = process.env.ALGOLIA_SEARCH_API_KEY!;
+  const indexName: string = process.env.ALGOLIA_INDEX_NAME!;
 
-const searchClient = algoliasearch(appID, apiKey);
-const index = searchClient.initIndex(indexName);
+  const searchClient = algoliasearch(appID, apiKey);
+  const index = searchClient.initIndex(indexName);
 
-console.log(index);
+  // let gymHits: Gym[] = [];
 
-index
-  .search({ query: 'yoga' })
-  .then(({ hits } = {}) => {
-    console.log(hits);
-  })
-  .catch(err => {
-    console.log(err);
-    console.log(err.debugData);
-  });
+  index
+    .search({ query: 'yoga' })
+    .then(({ hits } = {}) => {
+      // gymHits.push(hits);
+      // console.log(gymHits);
+      return hits;
+    })
+    .catch(err => {
+      console.log(err);
+      console.log(err.debugData);
+    });
+  console.log(hits);
+  return (
+    <React.Fragment>
+      <div>Lol</div>
+    </React.Fragment>
+  );
+};
 
-const Root = () => <div>heyyy y'allllszzz</div>;
-
-ReactDom.render(<Root />, document.getElementById('root'));
+const Root = () => <App />;
