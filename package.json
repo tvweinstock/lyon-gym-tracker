@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "@types/node": "^13.1.8",
+    "@types/react": "^16.9.19",
     "algoliasearch": "^3.35.1",
+    "p-cancelable": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
