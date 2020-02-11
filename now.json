@@ -1,0 +1,8 @@
+{
+  "env": {
+    "ALGOLIA_APP_ID": "@algolia_app_id",
+    "ALGOLIA_SEARCH_API_KEY": "@algolia_search_api_key",
+    "ALGOLIA_INDEX_NAME": "@algolia_index_name",
+    "ALGOLIA_ADMIN_API_KEY": "@algolia_admin_api_key"
+  }
+}

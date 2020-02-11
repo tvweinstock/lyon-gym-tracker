@@ -10,10 +10,7 @@ const Header = () => {
   }, []);
   return (
     <header>
-      <h1>
-        Last Visited at:{' '}
-        {lastVisitedTime ? lastVisitedTime.toString() : "You're new, welcome!"}
-      </h1>
+      <h1>Last Visited at: {lastVisitedTime ? lastVisitedTime.toString() : "You're new, welcome!"}</h1>
     </header>
   );
 };

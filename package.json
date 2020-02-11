@@ -1,5 +1,5 @@
 {
-  "name": "lyon_gyms",
+  "name": "lyon-gyms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,10 @@
     "@types/react": "^16.9.19",
     "@types/react-leaflet": "^2.5.0",
     "algoliasearch": "^3.35.1",
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^10.4.0",
     "leaflet": "^1.6.0",
+    "lodash": "^4.17.15",
     "p-cancelable": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "react": "^16.12.0",
@@ -22,7 +25,7 @@
   },
   "scripts": {
     "start": "parcel app/index.html --open",
-    "build": "parcel build app/index.html"
+    "build frontend": "parcel build app/index.html"
   },
   "author": "",
   "license": "ISC"

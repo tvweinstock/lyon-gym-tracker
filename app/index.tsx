@@ -70,16 +70,11 @@ const App = () => {
           setMapCenter([lat, lng]);
         }}
       >
-        <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+        <TileLayer attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        {/* bin */}
         <Circle center={mapCenter} radius={6000} />
         {gymList.map(gym => (
-          <Marker
-            key={gym.objectID}
-            position={[gym._geoloc.lat, gym._geoloc.lng]}
-          >
+          <Marker key={gym.objectID} position={[gym._geoloc.lat, gym._geoloc.lng]}>
             <Popup>
               <div>
                 <h4>{gym.name}</h4>
