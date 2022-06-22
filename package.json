@@ -9,7 +9,7 @@
     "@types/react-leaflet": "^2.5.0",
     "algoliasearch": "^3.35.1",
     "cheerio": "^1.0.0-rc.3",
-    "got": "^10.4.0",
+    "got": "^11.8.5",
     "leaflet": "^1.6.0",
     "lodash": "^4.17.15",
     "p-cancelable": "^2.0.0",
